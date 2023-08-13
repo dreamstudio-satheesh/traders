@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('product_name');
             $table->foreignId('category_id')->constrained('categories');
-            $table->foreignId('unit_id')->constrained('units');
+            $table->foreignId('unit_idid')->constrained('units');
             $table->foreignId('supplier_id')->constrained('suppliers');
             $table->decimal('unit_price', 10, 2);
             $table->string('sku')->nullable();
